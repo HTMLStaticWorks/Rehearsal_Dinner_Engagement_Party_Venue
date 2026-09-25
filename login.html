@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+    <meta name="theme-color" content="#f8f5ef">
+    <title>Client Login — Velora House</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23b58b52'/%3E%3Cpath d='M18 40c12-1 19-9 28-21 1 10-1 20-10 25-6 4-13 2-18-4Z' fill='white'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <main class="auth" style="position: relative;">
+            <div class="auth-controls">
+                <button data-rtl>RTL</button>
+                <button data-theme><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <div class="auth-card">
+                <a class="logo auth-logo" href="index.html">
+                    <span class="logo-mark"><i class="fa-solid fa-leaf"></i></span>
+                    <span>Velora House</span>
+                </a>
+                <h1>Welcome back</h1>
+                <div class="auth-sub">Manage your venue booking, guests and payments.</div>
+                <div class="social-login">
+                    <button type="button"><i class="fa-brands fa-google"></i> Google</button>
+                    <button type="button"><i class="fa-brands fa-apple"></i> Apple</button>
+                </div>
+                <div class="divider">or continue with email</div>
+                <form class="auth-form" onsubmit="event.preventDefault(); window.location.href='dashboard.html'">
+                    <div><label>Email</label><input type="email" required placeholder="you@example.com"></div>
+                    <div><label>Password</label><div style="position: relative;"><input type="password" required placeholder="••••••••"><i class="fa-solid fa-eye" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--muted);" onclick="const i = this.previousElementSibling; if(i.type==='password'){i.type='text'; this.classList.replace('fa-eye', 'fa-eye-slash')}else{i.type='password'; this.classList.replace('fa-eye-slash', 'fa-eye')}"></i></div></div>
+                    <div class="remember-row">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#" class="hover-link" onclick="event.preventDefault();alert('Password reset link requested.');">Forgot password?</a>
+                    </div>
+                    <button class="btn primary" type="submit">Login <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="auth-switch">New to Velora House? <a href="signup.html">Register</a></div>
+            </div>
+        </main>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
