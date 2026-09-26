@@ -3091,7 +3091,7 @@
 .navlinks a.active, #mobileNav a.active { color: var(--gold); font-weight: 700; }
 
 
-@media(max-width:1050px) { .grid-3 > *:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc(50% - 8px); justify-self: center; margin: 0 auto; } }
+@media (max-width:1050px) and (min-width: 681px) { .grid-3 > *:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc(50% - 8px); justify-self: center; margin: 0 auto; } }
 
 
 .contact-item { align-items: center; }
