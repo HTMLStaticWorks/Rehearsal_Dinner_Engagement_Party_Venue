@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
   <meta name="theme-color" content="#f8f5ef">
   <meta name="description"
-    content="Explore Velora House spaces, event themes, decoration options and a clear booking process for rehearsal dinners and engagement celebrations.">
+    content="Explore Velora House spaces, event themes, decoration options, and a clear step-by-step booking process for rehearsal dinners and engagement celebrations in Savannah, GA.">
   <title>Velora House | Rehearsal Dinner & Engagement Venue</title>
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23b58b52'/%3E%3Cpath d='M18 40c12-1 19-9 28-21 1 10-1 20-10 25-6 4-13 2-18-4Z' fill='white'/%3E%3C/svg%3E">
@@ -21,275 +21,506 @@
 
 <body class="home-one">
   <div id="app">
+    <!-- Navigation -->
     <header class="nav">
-      <div class="container nav-in"><a class="logo" href="index.html" aria-label="Velora House home"><span
-            class="logo-mark"><i class="fa-solid fa-leaf"></i></span><span>Velora House</span></a>
-        <nav class="navlinks"><a href="index.html">Home 1</a><a href="home-2.html">Home 2</a><a
-            href="about.html">About</a><a href="spaces.html">Spaces</a><a href="packages.html">Packages</a><a
-            href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a
-            href="dashboard.html">Dashboard</a><button class="nav-btn" data-rtl>RTL</button><button class="nav-btn"
-            data-theme><i class="fa-solid fa-moon"></i></button><a class="nav-btn login-btn" href="login.html">Login</a>
-        </nav><button class="menu" id="menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="container nav-in">
+        <a class="logo" href="index.html" aria-label="Velora House home">
+          <span class="logo-mark"><i class="fa-solid fa-leaf"></i></span>
+          <span>Velora House</span>
+        </a>
+        <nav class="navlinks">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+          <a href="about.html">About</a>
+          <a href="spaces.html">Spaces</a>
+          <a href="packages.html">Packages</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+          <button class="nav-btn" data-rtl>RTL</button>
+          <button class="nav-btn" data-theme><i class="fa-solid fa-moon"></i></button>
+          <a class="nav-btn login-btn" href="login.html">Login</a>
+        </nav>
+        <button class="menu" id="menu"><i class="fa-solid fa-bars"></i></button>
       </div>
     </header>
+
+    <!-- Mobile Drawer -->
     <div id="mobileNav"
       style="display:none;position:fixed;inset:76px 14px auto 14px;z-index:1100;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:var(--shadow)">
-      <div style="display:grid;gap:5px"><a class="nav-btn" href="index.html">Home 1</a><a class="nav-btn"
-          href="home-2.html">Home 2</a><a class="nav-btn" href="about.html">About</a><a class="nav-btn"
-          href="spaces.html">Spaces</a><a class="nav-btn" href="packages.html">Packages</a><a class="nav-btn"
-          href="gallery.html">Gallery</a><a class="nav-btn" href="contact.html">Contact</a><a class="nav-btn"
-          href="dashboard.html">Dashboard</a>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px"><button class="nav-btn"
-            data-rtl>RTL</button><button class="nav-btn" data-theme>Theme</button></div><a class="btn primary"
-          href="login.html">Login</a>
+      <div style="display:grid;gap:5px">
+        <a class="nav-btn" href="index.html">Home 1</a>
+        <a class="nav-btn" href="home-2.html">Home 2</a>
+        <a class="nav-btn" href="about.html">About</a>
+        <a class="nav-btn" href="spaces.html">Spaces</a>
+        <a class="nav-btn" href="packages.html">Packages</a>
+        <a class="nav-btn" href="gallery.html">Gallery</a>
+        <a class="nav-btn" href="contact.html">Contact</a>
+        <a class="nav-btn" href="dashboard.html">Dashboard</a>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+          <button class="nav-btn" data-rtl>RTL</button>
+          <button class="nav-btn" data-theme>Theme</button>
+        </div>
+        <a class="btn primary" href="login.html">Login</a>
       </div>
     </div>
+
     <main>
-      <section class="hero">
+      <!-- 1. Hero Section (Open & Spacious) -->
+      <section class="hero" aria-labelledby="hero-title">
         <div class="container hero-grid">
-          <div class="hero-copy reveal"><span class="eyebrow"><i class="fa-solid fa-champagne-glasses"></i>&nbsp;
-              Rehearsal dinners & engagement celebrations</span>
-            <h1><span>Celebrate beautifully.</span><span>Remember forever.</span></h1>
-            <p>From intimate rehearsal dinners to joyful engagement parties, Velora House brings elegant spaces,
-              thoughtful hospitality and effortless planning together.</p>
-            <div class="actions"><a class="btn primary" href="contact.html">Check availability <i
-                  class="fa-solid fa-arrow-right"></i></a><a class="btn" href="spaces.html">Explore Venue</a></div>
+          <div class="hero-copy reveal">
+            <span class="eyebrow"><i class="fa-solid fa-champagne-glasses"></i>&nbsp; Rehearsal dinners & engagement celebrations</span>
+            <h1 id="hero-title"><span>Celebrate beautifully.</span><span>Remember forever.</span></h1>
+            <p>From intimate rehearsal dinners to joyful engagement parties, Velora House brings elegant architectural spaces, thoughtful hospitality, and effortless planning together in Savannah's Riverside District.</p>
+            <div class="actions">
+              <a class="btn primary" href="contact.html">Check Availability <i class="fa-solid fa-arrow-right"></i></a>
+              <a class="btn" href="spaces.html">Explore Venue</a>
+              <a class="btn" href="gallery.html">View Past Events</a>
+            </div>
           </div>
-          <div class="hero-media reveal"><img
+          <div class="hero-media reveal">
+            <img
               src="https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg"
               alt="Elegant rehearsal dinner venue with tables and warm lighting" loading="lazy" decoding="async"
               referrerpolicy="no-referrer"
               onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
-            <div class="hero-caption"><strong>The Garden Hall</strong>
+            <div class="hero-caption">
+              <strong>The Garden Hall</strong>
               <p>Warm candlelight, flexible seating and a celebration-ready atmosphere.</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="section">
+
+      <!-- 2. Venue Facilities Showcase (Open, No Card Boxes) -->
+      <section class="section" id="facilities" aria-labelledby="facilities-title">
         <div class="container">
           <div class="section-head">
-            <h2>A setting made for your people.</h2>
-            <p>Thoughtful details, adaptable layouts and a polished backdrop for every meaningful gathering.</p>
+            <span class="eyebrow"><i class="fa-solid fa-archway"></i> Venue Facilities</span>
+            <h2 id="facilities-title">A setting crafted for your people & your evening</h2>
+            <p>Thoughtful details, flexible indoor-outdoor rooms, and an elevated atmosphere for every chapter of your gathering.</p>
           </div>
-          <div class="grid-3">
-            <article class="card reveal">
-              <div class="card-media"><img
-                  src="https://www.preludiocatering.it/assets/img/resized/wedding/01%402250px.jpg"
-                  alt="Garden Courtyard" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
-              </div>
-              <h3>Garden Courtyard</h3>
-              <p>An open-air setting for welcome drinks, photos and relaxed evening conversations.</p>
-            </article>
-            <article class="card reveal">
-              <div class="card-media"><img
+          <div class="grid-4">
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
                   src="https://images.squarespace-cdn.com/content/v1/5f566654940ba87465642ccf/77b1a77f-c336-41e7-a0e2-298c2a417d5f/untitled-7.jpg"
-                  alt="Grand Dining Room" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+                  alt="The Grand Dining Hall long dinner table setup" loading="lazy" decoding="async"
+                  referrerpolicy="no-referrer"
                   onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
               </div>
+              <span class="item-kicker">Up to 120 Guests</span>
               <h3>Grand Dining Room</h3>
-              <p>An elegant indoor room designed for long-table dinners and heartfelt toasts.</p>
+              <p>An elegant indoor space designed for long banquet tables, fine dining service, and heartfelt family speeches.</p>
+              <a class="item-link" href="spaces.html">Explore Venue <span aria-hidden="true">→</span></a>
             </article>
-            <article class="card reveal">
-              <div class="card-media"><img
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://www.preludiocatering.it/assets/img/resized/wedding/01%402250px.jpg"
+                  alt="Garden Courtyard with illuminated greenery" loading="lazy" decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Open-Air Reception</span>
+              <h3>Garden Courtyard</h3>
+              <p>An open-air setting for welcome drinks, passed hors d'oeuvres, and golden-hour sunset conversations.</p>
+              <a class="item-link" href="spaces.html">Explore Venue <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
                   src="https://www.hotelvanzandt.com/content/uploads/2025/06/writers-lounge-rehearsal-dinner-set-up-moody-candles-528x560.jpg"
-                  alt="Terrace Lounge" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+                  alt="Terrace Lounge with moody candlelight" loading="lazy" decoding="async"
+                  referrerpolicy="no-referrer"
                   onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
               </div>
+              <span class="item-kicker">Sunset Cocktail Bar</span>
               <h3>Terrace Lounge</h3>
-              <p>A sunset-friendly lounge for cocktails, desserts and after-dinner celebrations.</p>
+              <p>A sunset-friendly craft bar and lounge for cocktails, desserts, and relaxed after-dinner celebrations.</p>
+              <a class="item-link" href="spaces.html">Explore Venue <span aria-hidden="true">→</span></a>
             </article>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container feature">
-          <div class="visual reveal"><img
-              src="https://cdn0.weddingwire.com/vendor/692120/3_2/960/jpg/laura-glenn-wedding-805_51_21296-173948160061742.jpeg"
-              alt="Elegant wedding-style table setting for a rehearsal dinner" loading="lazy" decoding="async"
-              referrerpolicy="no-referrer"
-              onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
-          </div>
-          <div class="content reveal">
-            <h2>One venue, every part of the evening.</h2>
-            <p>Move naturally from welcome drinks to dinner, speeches and dancing without making guests feel like they
-              are changing venues.</p>
-            <div class="list">
-              <div><i class="fa-solid fa-check"></i><span>Flexible floor plans for intimate and larger groups.</span>
-              </div>
-              <div><i class="fa-solid fa-check"></i><span>Dedicated planning support from arrival to final toast.</span>
-              </div>
-              <div><i class="fa-solid fa-check"></i><span>Lighting and styling options matched to your
-                  celebration.</span></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
-            <h2>Designed around your guest experience.</h2>
-            <p>Small operational details keep the celebration feeling effortless.</p>
-          </div>
-          <div class="stats">
-            <div class="stat reveal"><strong>120+</strong><span>Guests comfortably hosted</span></div>
-            <div class="stat reveal"><strong>3</strong><span>Distinct celebration spaces</span></div>
-            <div class="stat reveal"><strong>7 days</strong><span>Flexible planning support</span></div>
-            <div class="stat reveal"><strong>1 team</strong><span>Venue, catering & decor coordination</span></div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container feature">
-          <div class="content reveal">
-            <h2>Food, flowers and finishing touches.</h2>
-            <p>Choose from curated catering and decor collections, then personalize the details that matter to you.</p>
-            <div class="actions" style="margin-top:20px"><a class="btn gold" href="packages.html">Choose Your Theme</a>
-            </div>
-          </div>
-          <div class="visual reveal"><img
-              src="https://hctg-images.imgix.net/images/venues/vine-hill-house/20250912VineHillHouseAtOconnellVineyards29.jpg?fit=clip&q=80&s=6f7d42e4c06d78336d98273c9e897e9b&w=1000"
-              alt="Refined celebration table with floral and dinner details" loading="lazy" decoding="async"
-              referrerpolicy="no-referrer"
-              onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
-            <h2>The evening, beautifully paced.</h2>
-            <p>Move from welcome cocktails to dinner, toasts and relaxed conversation with a setting that changes
-              naturally with the night.</p>
-          </div>
-          <div class="grid-3">
-            <article class="card reveal">
-              <div class="card-media"><img
-                  src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1800&q=90"
-                  alt="Welcome & cocktails" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://cdn0.weddingwire.com/vendor/692120/3_2/960/jpg/laura-glenn-wedding-805_51_21296-173948160061742.jpeg"
+                  alt="Private client preparation suite" loading="lazy" decoding="async" referrerpolicy="no-referrer"
                   onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
               </div>
-              <h3>Welcome & cocktails</h3>
-              <p>A warm first moment for guests to arrive, mingle and settle into the celebration.</p>
-            </article>
-            <article class="card reveal">
-              <div class="card-media"><img
-                  src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=90"
-                  alt="Dinner & toasts" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
-              </div>
-              <h3>Dinner & toasts</h3>
-              <p>A comfortable table layout keeps conversation, service and heartfelt speeches flowing.</p>
-            </article>
-            <article class="card reveal">
-              <div class="card-media"><img
-                  src="https://images.unsplash.com/photo-1529543544282-ea0402d64d4f?auto=format&fit=crop&w=1800&q=90"
-                  alt="After-dinner glow" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
-              </div>
-              <h3>After-dinner glow</h3>
-              <p>Shift into dessert, music and photos without losing the intimate atmosphere.</p>
+              <span class="item-kicker">Private Host Suite</span>
+              <h3>Client Suite & Amenities</h3>
+              <p>Private dressing room, staging kitchen for caterers, wireless sound setup, and dedicated on-site valet parking.</p>
+              <a class="item-link" href="spaces.html">Explore Venue <span aria-hidden="true">→</span></a>
             </article>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="notice reveal"><i class="fa-solid fa-sparkles"></i>
-            <div><strong>🌿 Your celebration should feel like you.</strong><br><span style="color:var(--muted)">Tell us
-                your date, guest count and mood. Our team will help shape the right room, menu and styling
-                combination.</span></div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
-            <h2>A beautiful new addition</h2>
-            <p>Experience the beauty of Velora House with our recently renovated terrace and garden spaces.</p>
-          </div>
-          <div class="grid-2">
-            <article class="card reveal">
-              <div class="card-media"><img
-                  src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=90"
-                  alt="New Terrace"></div>
-              <h3>The Sunset Terrace</h3>
-              <p>Our newly expanded outdoor space features panoramic views and comfortable lounge seating for golden
-                hour celebrations.</p>
-            </article>
-            <article class="card reveal">
-              <div class="card-media"><img
-                  src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&w=1800&q=90"
-                  alt="Garden Path"></div>
-              <h3>Secret Garden Walk</h3>
-              <p>Wander through illuminated pathways adorned with seasonal blooms, offering the perfect backdrop for
-                intimate photos.</p>
-            </article>
+          <div style="text-align:center;margin-top:clamp(2rem,3.5vw,3rem)">
+            <a class="btn primary" href="spaces.html">Explore Venue Spaces</a>
           </div>
         </div>
       </section>
 
+      <!-- 3. Atmosphere & Flow (Editorial Feature) -->
+      <section class="section" style="background:var(--surface);border-block:1px solid var(--line)">
+        <div class="container feature">
+          <div class="visual reveal">
+            <img
+              src="https://cdn.squaremeal.co.uk/wedding-venue/2765/images/wedding-dining-set-up_18072025013733.jpg?auto=format%2Ccompress&fit=crop&h=900&w=1400"
+              alt="Elegant wedding dining table arrangement at Velora House" loading="lazy" decoding="async"
+              referrerpolicy="no-referrer"
+              onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+          </div>
+          <div class="content reveal">
+            <span class="eyebrow"><i class="fa-solid fa-gem"></i> Cohesive Hospitality</span>
+            <h2>One venue, every chapter of the evening</h2>
+            <p>Move naturally from welcome drinks to dinner, speeches, and after-dinner drinks without making your guests feel rushed or displaced.</p>
+            <div class="list">
+              <div><i class="fa-solid fa-check"></i><span>Flexible seating floor plans for 30 to 120 guests.</span></div>
+              <div><i class="fa-solid fa-check"></i><span>Dedicated event concierge on-site from setup to final departure.</span></div>
+              <div><i class="fa-solid fa-check"></i><span>Curated lighting & bespoke floral direction matched to your celebration.</span></div>
+            </div>
+            <div class="actions" style="margin-top:22px">
+              <a class="btn primary" href="contact.html">Book a Tour</a>
+              <a class="btn" href="gallery.html">View Past Events</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Highlight -->
+      <section class="section" style="padding-block:clamp(30px,4vw,50px)!important">
+        <div class="container">
+          <div class="stats">
+            <div class="stat reveal"><strong>120+</strong><span>Guests comfortably hosted</span></div>
+            <div class="stat reveal"><strong>4</strong><span>Distinct celebration spaces</span></div>
+            <div class="stat reveal"><strong>3</strong><span>Curated styling themes</span></div>
+            <div class="stat reveal"><strong>1 Team</strong><span>Venue, styling & day-of coordination</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Previous Events & Setups Showcase (Curated Visuals) -->
+      <section class="section" id="past-events" aria-labelledby="past-events-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow"><i class="fa-solid fa-camera"></i> Previous Events</span>
+            <h2 id="past-events-title">Real setups from past celebrations</h2>
+            <p>Explore real rehearsal dinners, cocktail hours, and engagement gatherings hosted at Velora House.</p>
+          </div>
+          <div class="grid-3">
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg"
+                  alt="Candlelit 45-guest rehearsal dinner setup" loading="lazy" decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Rehearsal Dinner · 45 Guests</span>
+              <h3>Intimate Candlelit Banquet</h3>
+              <p>Tiered ivory taper candles, personalized menu stationery, and layered stoneware for a warm, family-centered rehearsal dinner.</p>
+              <a class="item-link" href="gallery.html">View Past Events <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1800&q=90"
+                  alt="Courtyard cocktail celebration" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Engagement Toast · 80 Guests</span>
+              <h3>Sunset Garden Party</h3>
+              <p>Passed canapés, champagne towers, live acoustic music, and ambient festoon lighting in the open-air courtyard.</p>
+              <a class="item-link" href="gallery.html">View Past Events <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1800&q=90"
+                  alt="Full venue welcome dinner and speeches" loading="lazy" decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Multi-Room Gala · 110 Guests</span>
+              <h3>Grand Welcome Evening</h3>
+              <p>Seamless movement from courtyard arrival drinks to long-table dinner service and heartfelt family speeches in the Grand Hall.</p>
+              <a class="item-link" href="gallery.html">View Past Events <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+          <div style="text-align:center;margin-top:clamp(2rem,3.5vw,3rem)">
+            <a class="btn primary" href="gallery.html">View Past Events</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Available Event Themes Showcase -->
+      <section class="section" id="themes" style="background:var(--cream);border-block:1px solid var(--line)" aria-labelledby="themes-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow"><i class="fa-solid fa-palette"></i> Signature Themes</span>
+            <h2 id="themes-title">Three moods. One memorable address.</h2>
+            <p>Select a visual direction for your celebration, then work with our in-house stylists to tailor linens, florals, and menu printing.</p>
+          </div>
+          <div class="grid-3">
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0868/6675/5862/files/beautifully-arranged-engagement-party.webp?v=1735202695"
+                  alt="Classic & candlelit theme setup" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Theme 01</span>
+              <h3>Classic & Candlelit</h3>
+              <p>Warm neutrals, layered tapered candlelight, brass candle holders, and a timeless dinner-table atmosphere.</p>
+              <a class="item-link" href="packages.html">Choose Your Theme <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1800&q=90"
+                  alt="Garden & botanical theme setup" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Theme 02</span>
+              <h3>Garden & Botanical</h3>
+              <p>Fresh greenery runners, olive branches, natural linen textures, and an open, airy indoor-outdoor celebration rhythm.</p>
+              <a class="item-link" href="packages.html">Choose Your Theme <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1800&q=90"
+                  alt="Modern & polished theme setup" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Theme 03</span>
+              <h3>Modern & Polished</h3>
+              <p>Clean architectural lines, contemporary monochrome accents, statement florals, and fluted cocktail glassware.</p>
+              <a class="item-link" href="packages.html">Choose Your Theme <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+          <div style="text-align:center;margin-top:clamp(2rem,3.5vw,3rem)">
+            <a class="btn primary" href="packages.html">Choose Your Theme</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Decoration Options Showcase -->
+      <section class="section" id="decor" aria-labelledby="decor-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> Styling & Decor</span>
+            <h2 id="decor-title">Thoughtful decoration options included with ease</h2>
+            <p>Every event package includes foundational table styling, ambient lighting, and floral direction, with bespoke upgrade options.</p>
+          </div>
+          <div class="grid-4">
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1800&q=90"
+                  alt="Table styling with linen place settings" loading="lazy" decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Place Settings</span>
+              <h3>Curated Tablescapes</h3>
+              <p>Stone-washed linens, ceramic chargers, cloth dinner napkins, and personalized calligraphy place cards.</p>
+            </article>
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=90"
+                  alt="Floral arrangements and table greenery" loading="lazy" decoding="async"
+                  referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Floral Styling</span>
+              <h3>Floral Installations</h3>
+              <p>Low-profile centerpieces designed for clear sightlines and easy cross-table conversation, plus entry displays.</p>
+            </article>
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1527529482837-983692775a8b?auto=format&fit=crop&w=1800&q=90"
+                  alt="Candlelit dinner atmosphere" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Warm Glow</span>
+              <h3>Layered Lighting</h3>
+              <p>Dimmable architectural chandeliers, wind-safe hurricane glass candle lanterns, and patio festoons.</p>
+            </article>
+
+            <article class="open-item reveal">
+              <div class="item-media">
+                <img
+                  src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&w=1800&q=90"
+                  alt="Custom cocktail bar styling" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+                  onerror="this.onerror=null;this.src='https://storage.googleapis.com/leye_bucket/wp-content/uploads/429088db-salon-61_phillip-amandas-rehearsal-dinner-1018.jpg';">
+              </div>
+              <span class="item-kicker">Bar & Accents</span>
+              <h3>Custom Bar Signage</h3>
+              <p>Personalized signature cocktail displays, crystal barware, tailored lounge seating, and welcome easels.</p>
+            </article>
+          </div>
+          <div class="actions" style="justify-content:center;margin-top:clamp(2rem,3.5vw,3rem);gap:14px">
+            <a class="btn primary" href="packages.html">Choose Your Theme</a>
+            <a class="btn" href="spaces.html">Explore Venue</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Step-by-Step Booking Process -->
       <section class="booking-journey section" aria-labelledby="booking-title">
         <div class="container">
-          <div class="booking-heading"><span class="eyebrow">A simple path to your celebration</span>
+          <div class="booking-heading">
+            <span class="eyebrow"><i class="fa-solid fa-route"></i> A simple path to your celebration</span>
             <h2 id="booking-title">From first enquiry to a confirmed date</h2>
             <p>Four clear steps keep planning calm, transparent and easy to follow.</p>
           </div>
           <ol class="booking-steps">
-            <li><span class="step-number">01</span>
+            <li>
+              <span class="step-number">01</span>
               <div>
                 <h3>Enquire</h3>
-                <p>Share your date, guest count and the kind of gathering you have in mind.</p><a
-                  href="contact.html">Start an enquiry <span aria-hidden="true">↗</span></a>
+                <p>Share your date, guest count and the kind of gathering you have in mind. We'll send tailored space options within 24 hours.</p>
+                <a href="contact.html">Check Availability <span aria-hidden="true">↗</span></a>
               </div>
             </li>
-            <li><span class="step-number">02</span>
+            <li>
+              <span class="step-number">02</span>
               <div>
                 <h3>Choose your theme</h3>
-                <p>Explore candlelit, garden-inspired and modern styling, then personalize the details.</p><a
-                  href="packages.html">Choose Your Theme <span aria-hidden="true">↗</span></a>
+                <p>Explore candlelit, garden-inspired and modern styling, then personalize the dining style, linens, and floral accents.</p>
+                <a href="packages.html">Choose Your Theme <span aria-hidden="true">↗</span></a>
               </div>
             </li>
-            <li><span class="step-number">03</span>
+            <li>
+              <span class="step-number">03</span>
               <div>
-                <h3>Check availability</h3>
-                <p>We’ll review your preferred date, space, guest count and package options with you.</p><a
-                  href="contact.html">Check Availability <span aria-hidden="true">↗</span></a>
+                <h3>Check availability & visit</h3>
+                <p>Tour the spaces in person or via guided video call, test layouts, and review transparent package options with our team.</p>
+                <a href="contact.html">Book a Tour <span aria-hidden="true">↗</span></a>
               </div>
             </li>
-            <li><span class="step-number">04</span>
+            <li>
+              <span class="step-number">04</span>
               <div>
                 <h3>Confirm your booking</h3>
-                <p>Review the event plan and quote, then confirm the date with our team.</p><a href="contact.html">Book
-                  a Tour <span aria-hidden="true">↗</span></a>
+                <p>Review the transparent itemized quote, approve the agreement, and manage milestones in your private client portal.</p>
+                <a href="spaces.html">Explore Venue <span aria-hidden="true">↗</span></a>
               </div>
             </li>
           </ol>
           <div class="booking-footer">
-            <p>Want to see the spaces in person before deciding?</p><a class="btn primary" href="contact.html">Book a
-              Tour <span aria-hidden="true">→</span></a>
+            <p>Want to see the spaces in person before deciding?</p>
+            <a class="btn primary" href="contact.html">Book a Tour <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Venue Location, Interactive Map & Directions, and Contact Details -->
+      <section class="section venue-location-section" id="location" aria-labelledby="location-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow"><i class="fa-solid fa-location-dot"></i> Venue Location & Directions</span>
+            <h2 id="location-title">Finding Velora House in Savannah's Riverside District</h2>
+            <p>A tranquil, accessible venue with dedicated parking, boutique hotel proximity, and quick airport access for traveling guests.</p>
+          </div>
+          <div class="location-grid">
+            <div class="location-details">
+              <div class="location-block">
+                <h3>Venue Address & Accessibility</h3>
+                <p class="address-text">
+                  <strong>Velora House</strong><br>
+                  18 Garden Lane, Riverside Arts District<br>
+                  Savannah, GA 31401
+                </p>
+                <a class="btn" href="https://www.google.com/maps/search/?api=1&query=18+Garden+Lane+Riverside+District" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-diamond-turn-right"></i> Get Directions <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+              <div class="location-info-grid">
+                <div class="info-card">
+                  <i class="fa-solid fa-car"></i>
+                  <div>
+                    <strong>Parking & Valet</strong>
+                    <p>Dedicated private on-site parking with complimentary valet service for all evening events.</p>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <i class="fa-solid fa-hotel"></i>
+                  <div>
+                    <strong>Nearby Hotels</strong>
+                    <p>Less than a 3-minute stroll to historic boutique riverfront hotels and guest inns.</p>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <i class="fa-solid fa-plane"></i>
+                  <div>
+                    <strong>Airport Access</strong>
+                    <p>Just 15 minutes direct drive from Savannah/Hilton Head International Airport (SAV).</p>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <i class="fa-solid fa-phone"></i>
+                  <div>
+                    <strong>Direct Contact</strong>
+                    <p>+1 (555) 240-1840 · hello@velorahouse.com<br>Concierge: Tue–Sat 9:00 AM – 7:00 PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="location-actions">
+                <a class="btn primary" href="contact.html">Book a Tour</a>
+                <a class="btn" href="contact.html">Check Availability</a>
+                <a class="btn" href="spaces.html">Explore Venue</a>
+              </div>
+            </div>
+            <div class="location-map-wrap">
+              <iframe class="map-frame" title="Interactive map showing Velora House location" loading="lazy"
+                src="https://www.google.com/maps?q=18%20Garden%20Lane%2C%20Riverside%20District&amp;output=embed"></iframe>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-in">
-        <div class="footer-copy"><a class="logo footer-logo" href="index.html"><span class="logo-mark"><i
-                class="fa-solid fa-leaf"></i></span><span>Velora House</span></a>
-          <p>A warm, design-led venue for rehearsal dinners, engagement parties and intimate celebrations, with
-            thoughtful planning support from first enquiry to final payment.</p>
-          <div class="footer-links"><a href="about.html">About</a><a href="spaces.html">Spaces</a><a
-              href="packages.html">Packages</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a
-              href="dashboard.html">Client portal</a></div>
+        <div class="footer-copy">
+          <a class="logo footer-logo" href="index.html">
+            <span class="logo-mark"><i class="fa-solid fa-leaf"></i></span>
+            <span>Velora House</span>
+          </a>
+          <p>A warm, design-led venue for rehearsal dinners, engagement parties, and intimate celebrations, with thoughtful planning support from first enquiry to final toast.</p>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="spaces.html">Spaces</a>
+            <a href="packages.html">Packages</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Client portal</a>
+          </div>
         </div>
         <div>
-          <div class="social"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#"
-              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Pinterest"><i
-                class="fa-brands fa-pinterest-p"></i></a><a href="#" aria-label="LinkedIn"><i
-                class="fa-brands fa-linkedin-in"></i></a></div>
-          <div style="color:var(--muted);font-size:.72rem;margin-top:10px">© 2026 Velora House. Celebrations,
-            thoughtfully hosted.</div>
+          <div class="social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <div style="color:var(--muted);font-size:.72rem;margin-top:10px">
+            © 2026 Velora House · 18 Garden Lane, Riverside District · Celebrations, thoughtfully hosted.
+          </div>
         </div>
       </div>
     </footer>
