@@ -4237,4 +4237,61 @@ img{object-fit:cover;object-position:center}
   width: 100% !important;
 }
 
+/* =========================================================
+   SPACES PAGE: INCREASE IMAGE HEIGHT
+   - The Garden Hall and The Courtyard section (.grid-2)
+   - The Courtyard feature section (.feature)
+   ========================================================= */
+
+.spaces-page .spaces-highlight-section .card-media,
+.spaces-highlight-section .card-media,
+.spaces-page .grid-2 .card-media {
+  height: clamp(380px, 36vw, 480px) !important;
+  aspect-ratio: auto !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  width: 100% !important;
+  margin-bottom: 0.9rem !important;
+}
+
+.spaces-page .spaces-highlight-section .card-media img,
+.spaces-highlight-section .card-media img,
+.spaces-page .grid-2 .card-media img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Ensure The Courtyard feature section visual also has increased height */
+.spaces-page .spaces-courtyard-feature .feature > .visual,
+.spaces-courtyard-feature .feature > .visual {
+  min-height: clamp(420px, 40vw, 540px) !important;
+}
+
+.spaces-page .spaces-courtyard-feature .feature .visual img,
+.spaces-courtyard-feature .feature .visual img {
+  min-height: clamp(420px, 40vw, 540px) !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+@media (max-width: 700px) {
+  .spaces-page .spaces-highlight-section .card-media,
+  .spaces-highlight-section .card-media,
+  .spaces-page .grid-2 .card-media {
+    height: clamp(280px, 68vw, 380px) !important;
+  }
+  .spaces-page .spaces-courtyard-feature .feature > .visual,
+  .spaces-courtyard-feature .feature > .visual,
+  .spaces-page .spaces-courtyard-feature .feature .visual img,
+  .spaces-courtyard-feature .feature .visual img {
+    min-height: clamp(280px, 68vw, 380px) !important;
+  }
+}
+
+
 
