@@ -3392,8 +3392,11 @@ img { max-width: 100%; }
 .booking-footer p { margin: 0; color: var(--muted); }
 .booking-journey-alt { background: var(--surface, #fffdf9); }
 .booking-alt-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 6rem); align-items: start; }
-.booking-alt-grid .booking-heading { text-align: left; margin: 0; }
-.booking-alt-grid .booking-heading p { margin: 0 0 1.4rem; }
+.booking-alt-grid .booking-heading { text-align: center; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.booking-alt-grid .booking-heading .eyebrow { align-self: center; margin-inline: auto; text-align: center; }
+.booking-alt-grid .booking-heading h2 { text-align: center; margin-inline: auto; }
+.booking-alt-grid .booking-heading p { margin: 0 auto 1.4rem; text-align: center; }
+.booking-alt-grid .booking-heading .btn { align-self: center; margin-inline: auto; margin-bottom: 2.2rem; }
 .booking-alt-grid .booking-steps { grid-template-columns: 1fr 1fr; }
 .booking-alt-grid .booking-steps li { border-bottom: 1px solid var(--soft-line); min-height: 130px; }
 .booking-alt-grid .booking-steps li:nth-child(2n) { border-right: 0; }
@@ -3464,7 +3467,10 @@ img { max-width: 100%; }
   .booking-steps li:last-child { border-bottom: 0; }
   .booking-footer { align-items: stretch; flex-direction: column; }
   .booking-alt-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-  .booking-alt-grid .booking-heading { text-align: left; }
+  .booking-alt-grid .booking-heading { text-align: center; align-items: center; }
+  .booking-alt-grid .booking-heading .eyebrow { align-self: center; }
+  .booking-alt-grid .booking-heading p { margin-inline: auto; }
+  .booking-alt-grid .booking-heading .btn { align-self: center; margin-bottom: 2.2rem; }
   .booking-alt-grid .booking-steps { grid-template-columns: 1fr; }
   .booking-alt-grid .booking-steps li, .booking-alt-grid .booking-steps li:first-child { padding: 1rem 0; border-right: 0; border-bottom: 1px solid var(--soft-line); }
   .booking-alt-grid .booking-steps li:last-child { border-bottom: 0; }
@@ -3487,3 +3493,356 @@ img { max-width: 100%; }
   .booking-steps li { gap: .7rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+
+/* Client completion pass: editorial layout, image consistency and responsive polish */
+:root{--section-space:clamp(38px,5vw,68px)}
+main>section{padding-block:var(--section-space)}
+main>section:first-child{padding-top:clamp(28px,4vw,52px)}
+main>section:last-child{padding-bottom:clamp(32px,4vw,54px)}
+section h1,section h2,section h3{text-wrap:balance;line-height:1.16}
+section h1{max-width:18ch;margin-inline:auto}
+section h2{max-width:24ch}
+.section-heading,.section-head,.center-heading{text-align:center;margin-inline:auto}
+.section-heading p,.section-head p,.center-heading p{margin-inline:auto;max-width:66ch}
+img{object-fit:cover;object-position:center}
+.gallery-grid img,.gallery-item img,.event-gallery img,.space-card img,.theme-card img,.feature-card img{width:100%;height:100%;object-fit:cover;object-position:center}
+.gallery-grid,.event-gallery{align-items:stretch}
+.gallery-grid>* , .event-gallery>*{overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 28px rgba(32,28,22,.08)}
+.split,.split-layout,.image-content,.feature-split{align-items:stretch}
+.split>*,.split-layout>*,.image-content>*,.feature-split>*{min-width:0}
+.split img,.split-layout img,.image-content img,.feature-split img{height:100%;min-height:300px;object-fit:cover}
+.home-one .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.92fr);align-items:center;gap:clamp(24px,5vw,64px)}
+.home-one .hero h1{text-align:left;margin-inline:0;max-width:13ch}
+.home-one .hero p{max-width:58ch}
+.home-two .hero{display:grid;grid-template-columns:minmax(0,1fr);text-align:center;justify-items:center;position:relative;overflow:hidden}
+.home-two .hero h1,.home-two .hero p{margin-inline:auto;text-align:center}
+.home-two .hero h1{max-width:16ch}
+.home-two .hero p{max-width:62ch}
+.home-two .hero .hero-media,.home-two .hero .hero-image{width:min(100%,1000px);margin:28px auto 0;max-height:440px;overflow:hidden}
+.home-two .hero .hero-media img,.home-two .hero .hero-image img{max-height:440px;object-fit:cover}
+.booking-journey{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,54px);align-items:center;border-block:1px solid var(--line);background:var(--cream)}
+.booking-journey .journey-intro h2{margin:.2em 0 .45em}
+.booking-journey .journey-intro p:last-child{max-width:58ch}
+.journey-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;border-top:1px solid var(--line)}
+.journey-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);font-weight:700;color:var(--ink)}
+.journey-link span{color:var(--gold);font-size:1.15rem}
+.journey-link:hover{color:var(--gold)}
+.card,.feature-card,.space-card,.theme-card,.package-card{border-color:var(--line)}
+@media(max-width:900px){.home-one .hero{grid-template-columns:1fr}.home-one .hero h1{text-align:center;margin-inline:auto}.home-one .hero p{text-align:center;margin-inline:auto}.booking-journey{grid-template-columns:1fr}.split img,.split-layout img,.image-content img,.feature-split img{min-height:260px}}
+@media(max-width:600px){.container{width:min(var(--max),calc(100% - 32px))}main>section{padding-block:32px}section h1{font-size:clamp(2rem,9vw,3rem)}section h2{font-size:clamp(1.5rem,6.5vw,2.1rem)}.booking-journey{gap:18px}.journey-links{grid-template-columns:1fr}.split img,.split-layout img,.image-content img,.feature-split img{min-height:220px}.home-two .hero .hero-media,.home-two .hero .hero-image,.home-two .hero .hero-media img,.home-two .hero .hero-image img{max-height:280px}}
+
+
+/* Targeted screenshot fixes: prevent narrow booking layout and clipped Home 1 hero. */
+.home-one .hero { display:block !important; }
+.home-one .hero-grid {
+  display:grid !important;
+  grid-template-columns:minmax(0, .95fr) minmax(0, 1.05fr) !important;
+  align-items:center !important;
+  gap:clamp(24px, 4vw, 64px) !important;
+  width:min(var(--content-width, 1280px), calc(100% - 60px)) !important;
+  max-width:none !important;
+  margin-inline:auto !important;
+}
+.home-one .hero-copy { min-width:0; width:100%; }
+.home-one .hero-copy h1 {
+  max-width:none !important;
+  width:100%;
+  font-size:clamp(3rem, 5.2vw, 5.4rem) !important;
+  line-height:1.02 !important;
+  overflow-wrap:normal;
+  word-break:normal;
+  margin-inline:0 !important;
+}
+.home-one .hero-copy h1 span { display:block; max-width:100%; }
+.home-one .hero-media { min-width:0; width:100%; height:clamp(420px, 48vw, 680px); min-height:0; }
+.home-one .hero-media img { display:block; width:100%; height:100%; object-fit:cover; }
+
+/* The section itself must not create a two-column grid around a single container. */
+.booking-journey { display:block !important; width:100%; }
+.booking-journey > .container {
+  display:block;
+  width:min(var(--content-width, 1280px), calc(100% - 60px));
+  max-width:none;
+  margin-inline:auto;
+}
+.booking-journey:not(.booking-journey-alt) .booking-heading {
+  width:100%; max-width:100%; margin:0 0 2rem; text-align:center;
+}
+.booking-journey:not(.booking-journey-alt) .booking-heading h2 { max-width:none; margin-inline:auto; }
+.booking-journey:not(.booking-journey-alt) .booking-heading p { max-width:66ch; margin-inline:auto; }
+.booking-journey:not(.booking-journey-alt) .booking-steps {
+  display:grid !important;
+  width:100% !important;
+  max-width:none !important;
+  grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+.booking-journey:not(.booking-journey-alt) .booking-steps li { min-width:0; }
+@media (max-width:1000px) {
+  .home-one .hero-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important; width:calc(100% - 36px) !important; }
+  .home-one .hero-copy h1 { font-size:clamp(2.7rem, 5vw, 4.2rem) !important; }
+  .booking-journey:not(.booking-journey-alt) .booking-steps { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+  .booking-journey:not(.booking-journey-alt) .booking-steps li:nth-child(2n) { border-right:0; }
+}
+@media (max-width:700px) {
+  .home-one .hero-grid { display:flex !important; flex-direction:column !important; width:calc(100% - 32px) !important; gap:1.5rem !important; }
+  .home-one .hero-copy h1 { font-size:clamp(2.6rem, 11vw, 4rem) !important; }
+  .home-one .hero-media { height:auto; min-height:0; aspect-ratio:4/3; }
+  .booking-journey > .container { width:calc(100% - 32px); }
+  .booking-journey:not(.booking-journey-alt) .booking-steps { grid-template-columns:1fr !important; }
+}
+
+
+/* V2 screenshot-driven fixes: constrain hero typography and make booking content use a centered full-width container. */
+.home-one main > .hero { display:block !important; width:100%; overflow:hidden; }
+.home-one .hero .container.hero-grid {
+  width:min(1320px, calc(100% - 64px)) !important; max-width:1320px !important;
+  margin-inline:auto !important; padding-inline:0 !important;
+  display:grid !important; grid-template-columns:minmax(0, .9fr) minmax(0, 1.1fr) !important;
+  gap:clamp(24px, 4vw, 60px) !important; align-items:center !important;
+}
+.home-one .hero-copy { min-width:0 !important; max-width:100% !important; }
+.home-one .hero-copy .eyebrow { max-width:100%; white-space:normal !important; }
+.home-one .hero-copy h1 {
+  width:100% !important; max-width:100% !important; font-size:clamp(2.65rem, 4.3vw, 4.8rem) !important;
+  line-height:1.04 !important; letter-spacing:-.045em !important; overflow:visible !important;
+  white-space:normal !important; overflow-wrap:normal !important; word-break:normal !important;
+}
+.home-one .hero-copy h1 span { display:block !important; width:100% !important; max-width:100% !important; white-space:normal !important; }
+.home-one .hero-copy .actions { display:flex; flex-wrap:wrap; gap:10px; }
+.home-one .hero-media { width:100% !important; min-width:0 !important; height:clamp(400px, 43vw, 620px) !important; overflow:hidden; }
+.home-one .hero-media img { width:100% !important; height:100% !important; object-fit:cover !important; }
+.home-two .hero .container.hero-grid { width:min(1240px,calc(100% - 64px)) !important; max-width:1240px !important; margin-inline:auto !important; }
+.home-two .hero-copy { min-width:0; }
+.home-two .hero-copy h1 { font-size:clamp(2.5rem,4.4vw,4.7rem) !important; line-height:1.05 !important; max-width:100% !important; overflow-wrap:normal !important; word-break:normal !important; }
+.home-two .hero-copy h1 span { white-space:normal !important; }
+
+/* Injected booking CTA blocks on inner pages have no .container wrapper; constrain and center their children. */
+.booking-journey:not(.booking-journey-alt) {
+  display:block !important; width:100% !important; max-width:none !important;
+  padding:clamp(42px,5vw,72px) 0 !important; margin:0 !important;
+}
+.booking-journey:not(.booking-journey-alt) > .journey-intro,
+.booking-journey:not(.booking-journey-alt) > .journey-links {
+  width:min(1320px,calc(100% - 64px)) !important; max-width:1320px !important;
+  margin-inline:auto !important; box-sizing:border-box !important;
+}
+.booking-journey:not(.booking-journey-alt) > .journey-intro { margin-bottom:clamp(24px,3vw,42px) !important; }
+.booking-journey:not(.booking-journey-alt) .journey-intro .eyebrow { display:inline-flex; max-width:100%; }
+.booking-journey:not(.booking-journey-alt) .journey-intro h2 {
+  max-width:24ch !important; margin:.45rem 0 .7rem !important; font-size:clamp(2rem,3.2vw,3.2rem) !important;
+  line-height:1.12 !important; white-space:normal !important; overflow-wrap:normal !important;
+}
+.booking-journey:not(.booking-journey-alt) .journey-intro > p:last-child { max-width:66ch !important; }
+.booking-journey:not(.booking-journey-alt) .journey-links {
+  display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:0 28px !important; padding:0 !important; border-top:1px solid var(--line) !important;
+}
+.booking-journey:not(.booking-journey-alt) .journey-link {
+  display:flex !important; width:100% !important; min-width:0 !important; box-sizing:border-box !important;
+  justify-content:space-between !important; align-items:center !important; gap:16px !important;
+  padding:18px 0 !important; border-bottom:1px solid var(--line) !important; overflow-wrap:anywhere;
+}
+@media(max-width:900px) {
+ .home-one .hero .container.hero-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important; width:calc(100% - 40px) !important; gap:24px !important; }
+ .home-one .hero-copy h1 { font-size:clamp(2.3rem,4.8vw,3.6rem) !important; }
+ .booking-journey:not(.booking-journey-alt) > .journey-intro,.booking-journey:not(.booking-journey-alt) > .journey-links { width:calc(100% - 40px) !important; }
+}
+@media(max-width:650px) {
+ .home-one .hero .container.hero-grid { display:flex !important; flex-direction:column !important; width:calc(100% - 32px) !important; }
+ .home-one .hero-copy h1 { font-size:clamp(2.5rem,10vw,3.6rem) !important; }
+ .home-one .hero-media { height:auto !important; aspect-ratio:4/3; }
+ .home-one .hero-copy .actions { display:grid; grid-template-columns:1fr; }
+ .home-one .hero-copy .actions .btn { width:100%; }
+ .home-two .hero .container.hero-grid { width:calc(100% - 32px) !important; }
+ .home-two .hero-copy h1 { font-size:clamp(2.25rem,9vw,3.4rem) !important; }
+ .booking-journey:not(.booking-journey-alt) > .journey-intro,.booking-journey:not(.booking-journey-alt) > .journey-links { width:calc(100% - 32px) !important; }
+ .booking-journey:not(.booking-journey-alt) .journey-links { grid-template-columns:1fr !important; }
+}
+
+
+/* FINAL correction: actual hero markup and booking flow layout */
+.home-one main > .hero,
+.home-two main > .hero { width:100%; overflow:visible; }
+.home-one main > .hero > .container.hero-grid,
+.home-two main > .hero > .container.hero-grid {
+  width:min(1320px, calc(100% - 64px)) !important;
+  max-width:1320px !important; margin-inline:auto !important;
+  box-sizing:border-box; min-width:0;
+}
+.home-one main > .hero > .container.hero-grid {
+  display:grid !important;
+  grid-template-columns:minmax(0, .9fr) minmax(0, 1.1fr) !important;
+  gap:clamp(24px, 4vw, 60px) !important; align-items:center !important;
+}
+.home-one .hero-copy, .home-two .hero-copy { min-width:0 !important; width:100%; max-width:100% !important; }
+.home-one .hero-copy h1, .home-two .hero-copy h1 {
+  width:100% !important; max-width:100% !important; font-size:clamp(2.45rem, 4.5vw, 4.65rem) !important;
+  line-height:1.04 !important; letter-spacing:-.04em; white-space:normal !important;
+  overflow:visible !important; overflow-wrap:break-word !important; word-break:normal !important;
+}
+.home-one .hero-copy h1 span, .home-two .hero-copy h1 span {
+  display:block; width:100%; max-width:100%; white-space:normal !important; overflow-wrap:break-word !important;
+}
+.home-one .hero-media, .home-two .hero-media { min-width:0 !important; max-width:100%; overflow:hidden; }
+.home-one .hero-media img, .home-two .hero-media img { display:block; width:100%; max-width:100%; height:100%; object-fit:cover; }
+/* Keep the intended four-step booking journey only on Home 1; use the full container width. */
+.home-one .booking-journey:not(.booking-journey-alt) { display:block !important; width:100% !important; }
+.home-one .booking-journey:not(.booking-journey-alt) > .container {
+  display:block !important; width:min(1320px, calc(100% - 64px)) !important;
+  max-width:1320px !important; margin-inline:auto !important; box-sizing:border-box;
+}
+.home-one .booking-journey .booking-heading { width:100% !important; max-width:none !important; text-align:center !important; }
+.home-one .booking-journey .booking-heading h2 { max-width:none !important; }
+.home-one .booking-journey .booking-heading p { max-width:66ch; margin-inline:auto; }
+.home-one .booking-journey .booking-steps {
+  display:grid !important; grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  width:100% !important; max-width:none !important; margin:0 !important; padding:0 !important;
+}
+.home-one .booking-journey .booking-steps li { min-width:0; box-sizing:border-box; }
+@media (max-width:900px) {
+ .home-one main > .hero > .container.hero-grid { width:calc(100% - 40px) !important; grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important; gap:24px !important; }
+ .home-one .booking-journey:not(.booking-journey-alt) > .container { width:calc(100% - 40px) !important; }
+ .home-one .booking-journey .booking-steps { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+}
+@media (max-width:650px) {
+ .home-one main > .hero > .container.hero-grid { display:flex !important; flex-direction:column !important; width:calc(100% - 32px) !important; }
+ .home-one .hero-copy h1, .home-two .hero-copy h1 { font-size:clamp(2.2rem, 9.5vw, 3.4rem) !important; }
+ .home-one .hero-media { height:auto !important; aspect-ratio:4/3; }
+ .home-one .booking-journey:not(.booking-journey-alt) > .container { width:calc(100% - 32px) !important; }
+ .home-one .booking-journey .booking-steps { grid-template-columns:1fr !important; }
+}
+
+/* =========================================================
+   USER REQUEST ENHANCEMENTS:
+   1. Home 1: 'A simple path to your celebration' section step links parallel in all views
+   2. Home 2: Hero section content all center aligned, img side overlap content kept center
+   3. Home 2: 'Your celebration, step by step' all text center, check availability button center with bottom space
+   ========================================================= */
+
+/* 1. Home 1: 'A simple path to your celebration' step links parallel across all columns and views */
+.home-one .booking-steps,
+.booking-steps {
+  align-items: stretch !important;
+}
+.home-one .booking-steps li,
+.booking-steps li {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  height: auto !important;
+}
+.home-one .booking-steps li > div,
+.booking-steps li > div {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  height: 100% !important;
+}
+.home-one .booking-steps li > div > p,
+.booking-steps li > div > p {
+  margin-bottom: 0.85rem !important;
+}
+.home-one .booking-steps li a,
+.booking-steps li a {
+  margin-top: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  width: fit-content !important;
+  align-self: flex-start !important;
+}
+
+/* 2. Home 2: Hero section content all align center and img side overlap content keep center */
+.home-two .hero-copy {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.home-two .hero-copy .eyebrow {
+  align-self: center !important;
+  margin-inline: auto !important;
+  text-align: center !important;
+}
+.home-two .hero-copy h1 {
+  text-align: center !important;
+  margin-inline: auto !important;
+}
+.home-two .hero-copy h1 span {
+  text-align: center !important;
+  margin-inline: auto !important;
+}
+.home-two .hero-copy p {
+  text-align: center !important;
+  margin-inline: auto !important;
+}
+.home-two .hero-copy .actions {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-inline: auto !important;
+  width: 100% !important;
+}
+.home-two .hero-media .hero-caption {
+  text-align: center !important;
+  left: 24px !important;
+  right: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.home-two .hero-media .hero-caption strong {
+  display: block !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+.home-two .hero-media .hero-caption p {
+  text-align: center !important;
+  margin-inline: auto !important;
+  width: 100% !important;
+}
+
+/* 3. Home 2: 'Your celebration, step by step' section all text centered, button centered with bottom space */
+.home-two .booking-journey-alt .booking-heading,
+.booking-journey-alt .booking-heading,
+.booking-alt-grid .booking-heading {
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-inline: auto !important;
+}
+.home-two .booking-journey-alt .booking-heading .eyebrow,
+.booking-journey-alt .booking-heading .eyebrow,
+.booking-alt-grid .booking-heading .eyebrow {
+  align-self: center !important;
+  margin-inline: auto !important;
+  text-align: center !important;
+}
+.home-two .booking-journey-alt .booking-heading h2,
+.booking-journey-alt .booking-heading h2,
+.booking-alt-grid .booking-heading h2 {
+  text-align: center !important;
+  margin-inline: auto !important;
+}
+.home-two .booking-journey-alt .booking-heading p,
+.booking-journey-alt .booking-heading p,
+.booking-alt-grid .booking-heading p {
+  text-align: center !important;
+  margin: 0 auto 1.5rem !important;
+  max-width: 58ch !important;
+}
+.home-two .booking-journey-alt .booking-heading .btn,
+.booking-journey-alt .booking-heading .btn,
+.booking-alt-grid .booking-heading .btn {
+  align-self: center !important;
+  margin-inline: auto !important;
+  margin-bottom: 2.2rem !important; /* give bottom space */
+}
